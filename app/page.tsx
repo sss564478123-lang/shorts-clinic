@@ -9,20 +9,20 @@ export default function Home() {
       {/* 히어로 */}
       <section className="max-w-5xl mx-auto px-6 pt-16 pb-14">
         <p className="inline-block rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium">
-          유튜브 쇼츠 운영자를 위한 업로드 전 점검 서비스
+          유튜브 쇼츠 제목·썸네일·첫 3초 오프닝 점검 서비스
         </p>
 
         <h1 className="mt-6 text-4xl md:text-6xl font-black leading-tight tracking-tight">
-          올리기 전에,
+          쇼츠 제목 썸네일 점검,
           <br />
-          망할 포인트부터 먼저 잡아드립니다.
+          올리기 전에 먼저 확인하세요
         </h1>
 
         <p className="mt-6 text-lg text-gray-700 leading-8 max-w-3xl">
-          제목, 썸네일 문구, 첫 3초 오프닝, 설명문을 업로드 전에 점검해서
-          실수할 확률을 줄여드립니다.
+          유튜브 쇼츠 제목 추천이 애매하거나, 썸네일 문구 강도를 못 잡겠거나,
+          첫 3초 오프닝이 약한지 헷갈릴 때 업로드 전에 점검해드립니다.
           <br />
-          단순히 문제를 지적하는 게 아니라,
+          단순히 문제를 말하는 게 아니라,
           <span className="font-semibold text-black">
             {" "}
             왜 약한지와 바로 쓸 수 있는 수정안
@@ -46,7 +46,7 @@ export default function Home() {
             rel="noreferrer"
             className="rounded-2xl border border-black bg-white px-6 py-4 font-semibold text-center"
           >
-            오픈채팅으로 먼저 문의하기
+            카카오톡으로 문의하기
           </a>
         </div>
 
@@ -54,14 +54,14 @@ export default function Home() {
           <div className="rounded-2xl border bg-white px-4 py-4">
             <p className="text-sm font-bold">24시간 이내 전달</p>
             <p className="mt-1 text-sm text-gray-500">
-              빠르게 보고 바로 수정할 수 있게 정리
+              업로드 전에 빠르게 보고 바로 수정 가능
             </p>
           </div>
 
           <div className="rounded-2xl border bg-white px-4 py-4">
-            <p className="text-sm font-bold">바로 적용 가능한 수정안</p>
+            <p className="text-sm font-bold">제목·썸네일·오프닝 점검</p>
             <p className="mt-1 text-sm text-gray-500">
-              제목·썸네일·오프닝 수정안을 함께 제공
+              쇼츠 제목 썸네일 점검을 한 번에 제공
             </p>
           </div>
 
@@ -82,7 +82,7 @@ export default function Home() {
           </p>
 
           <h2 className="mt-3 text-2xl font-black">
-            이런 식으로 수정 포인트를 잡아드립니다
+            유튜브 쇼츠 제목 추천과 썸네일 문구 점검은 이렇게 진행됩니다
           </h2>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2">
@@ -131,10 +131,10 @@ export default function Home() {
           <div className="rounded-3xl border bg-white p-8">
             <h2 className="text-2xl font-black">이 서비스가 필요한 사람</h2>
             <ul className="mt-6 space-y-3 leading-7 text-gray-700">
-              <li>• 영상은 만들었는데 업로드 직전 판단이 늘 애매한 사람</li>
-              <li>• 제목이 약한지 강한지 혼자 판단이 안 되는 사람</li>
-              <li>• 썸네일 문구 강도를 잘 못 잡는 사람</li>
-              <li>• 첫 3초가 늘 약한 것 같은 사람</li>
+              <li>• 유튜브 쇼츠 제목 추천이 늘 애매한 사람</li>
+              <li>• 쇼츠 썸네일 문구 강도를 혼자 못 잡는 사람</li>
+              <li>• 첫 3초 오프닝이 약한 것 같은 사람</li>
+              <li>• 조회수가 안 나오는 쇼츠를 업로드 전에 점검받고 싶은 사람</li>
               <li>• AI를 쓰다 보니 채널 말투가 흔들리는 사람</li>
             </ul>
           </div>
@@ -235,25 +235,23 @@ export default function Home() {
 
         <div className="space-y-4">
           <div className="rounded-2xl border bg-white p-5">
-            <h3 className="mb-2 font-bold">조회수를 보장하나요?</h3>
+            <h3 className="mb-2 font-bold">유튜브 쇼츠 제목 추천도 해주나요?</h3>
             <p className="leading-7 text-gray-700">
-              아닙니다. 이 서비스는 업로드 전에 실수할 확률을 줄이고,
-              제목·썸네일·오프닝·설명문의 약한 지점을 정리해드리는 서비스입니다.
+              네. 채널 톤과 영상 방향에 맞춰 제목 수정안까지 함께 드립니다.
             </p>
           </div>
 
           <div className="rounded-2xl border bg-white p-5">
-            <h3 className="mb-2 font-bold">어떤 채널이 특히 잘 맞나요?</h3>
+            <h3 className="mb-2 font-bold">쇼츠 썸네일 문구도 봐주나요?</h3>
             <p className="leading-7 text-gray-700">
-              한국어 쇼츠 정보형 채널, 공부/교육 채널, 음악/감성 채널처럼
-              말투와 포장력이 중요한 채널에 특히 잘 맞습니다.
+              네. 제목과 따로 놀지 않도록 썸네일 문구도 같이 점검합니다.
             </p>
           </div>
 
           <div className="rounded-2xl border bg-white p-5">
             <h3 className="mb-2 font-bold">결과는 어떤 형식으로 받나요?</h3>
             <p className="leading-7 text-gray-700">
-              핵심 문제, 수정 우선순위, 제목/썸네일/오프닝 수정안,
+              핵심 문제, 수정 우선순위, 제목·썸네일·오프닝 수정안,
               설명문 개선안, 최종 판단까지 정리된 형태로 전달드립니다.
             </p>
           </div>
@@ -264,14 +262,14 @@ export default function Home() {
       <section className="max-w-5xl mx-auto px-6 pb-20">
         <div className="rounded-3xl bg-black p-10 text-white md:p-14">
           <h2 className="text-3xl font-black leading-tight md:text-4xl">
-            올리기 전에,
+            쇼츠 업로드 전 점검이 필요하다면,
             <br />
-            망할 포인트부터 먼저 잡아드립니다.
+            제목과 썸네일부터 먼저 잡아보세요.
           </h2>
 
           <p className="mt-5 max-w-2xl leading-8 text-white/80">
-            영상은 이미 만들었는데 제목, 썸네일 문구, 첫 3초, 설명문이
-            괜찮은지 혼자 판단이 안 될 때 쓰는 서비스입니다.
+            유튜브 쇼츠 제목 추천, 썸네일 문구 점검, 첫 3초 오프닝 수정까지
+            업로드 전에 한 번에 확인할 수 있습니다.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -290,7 +288,7 @@ export default function Home() {
               rel="noreferrer"
               className="rounded-2xl border border-white px-6 py-4 text-center font-semibold"
             >
-              먼저 문의하기
+              카카오톡으로 문의하기
             </a>
           </div>
         </div>
