@@ -13,7 +13,7 @@ export default function Home() {
         </p>
 
         <h1 className="mt-6 text-4xl md:text-6xl font-black leading-tight tracking-tight">
-          쇼츠 업로드 전,
+          [SSD 확인] 쇼츠 업로드 전,
           <br />
           제목과 썸네일부터 먼저 점검하세요
         </h1>
