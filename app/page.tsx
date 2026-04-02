@@ -13,29 +13,29 @@ export default function Home() {
         </p>
 
         <h1 className="mt-6 text-4xl md:text-6xl font-black leading-tight tracking-tight">
-          쇼츠 제목 썸네일 점검,
+          쇼츠 업로드 전,
           <br />
-          올리기 전에 먼저 확인하세요
+          제목과 썸네일부터 먼저 점검하세요
         </h1>
 
-        <p className="mt-6 text-lg text-gray-700 leading-8 max-w-3xl">
-          유튜브 쇼츠 제목 추천이 애매하거나, 썸네일 문구 강도를 못 잡겠거나,
-          첫 3초 오프닝이 약한지 헷갈릴 때 업로드 전에 점검해드립니다.
+        <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-700">
+          유튜브 쇼츠 제목이 약한지, 썸네일 문구가 애매한지, 첫 3초 오프닝이
+          부족한지 업로드 전에 점검해드립니다.
           <br />
           단순히 문제를 말하는 게 아니라,
           <span className="font-semibold text-black">
             {" "}
-            왜 약한지와 바로 쓸 수 있는 수정안
+            왜 약한지와 바로 적용할 수정안
           </span>
           까지 정리해서 드립니다.
         </p>
 
-        <div className="mt-8 flex flex-col sm:flex-row gap-4">
+        <div className="mt-8 flex flex-col gap-4 sm:flex-row">
           <a
             href={FORM_URL}
             target="_blank"
             rel="noreferrer"
-            className="rounded-2xl bg-black text-white px-6 py-4 font-semibold text-center"
+            className="rounded-2xl bg-black px-6 py-4 text-center font-semibold text-white"
           >
             지금 점검 신청하기
           </a>
@@ -44,13 +44,17 @@ export default function Home() {
             href={KAKAO_URL}
             target="_blank"
             rel="noreferrer"
-            className="rounded-2xl border border-black bg-white px-6 py-4 font-semibold text-center"
+            className="rounded-2xl border border-black bg-white px-6 py-4 text-center font-semibold"
           >
             카카오톡으로 문의하기
           </a>
         </div>
 
-        <div className="mt-8 grid sm:grid-cols-3 gap-3 max-w-3xl">
+        <p className="mt-4 text-sm text-gray-500">
+          신청 내용을 확인한 뒤, 진행 가능 여부와 결제 안내를 드립니다.
+        </p>
+
+        <div className="mt-8 grid max-w-3xl gap-3 sm:grid-cols-3">
           <div className="rounded-2xl border bg-white px-4 py-4">
             <p className="text-sm font-bold">24시간 이내 전달</p>
             <p className="mt-1 text-sm text-gray-500">
@@ -61,7 +65,7 @@ export default function Home() {
           <div className="rounded-2xl border bg-white px-4 py-4">
             <p className="text-sm font-bold">제목·썸네일·오프닝 점검</p>
             <p className="mt-1 text-sm text-gray-500">
-              쇼츠 제목 썸네일 점검을 한 번에 제공
+              핵심 클릭 포인트를 한 번에 확인
             </p>
           </div>
 
@@ -82,7 +86,7 @@ export default function Home() {
           </p>
 
           <h2 className="mt-3 text-2xl font-black">
-            유튜브 쇼츠 제목 추천과 썸네일 문구 점검은 이렇게 진행됩니다
+            이런 식으로 수정 포인트를 정리해드립니다
           </h2>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2">
@@ -131,10 +135,10 @@ export default function Home() {
           <div className="rounded-3xl border bg-white p-8">
             <h2 className="text-2xl font-black">이 서비스가 필요한 사람</h2>
             <ul className="mt-6 space-y-3 leading-7 text-gray-700">
-              <li>• 유튜브 쇼츠 제목 추천이 늘 애매한 사람</li>
-              <li>• 쇼츠 썸네일 문구 강도를 혼자 못 잡는 사람</li>
-              <li>• 첫 3초 오프닝이 약한 것 같은 사람</li>
-              <li>• 조회수가 안 나오는 쇼츠를 업로드 전에 점검받고 싶은 사람</li>
+              <li>• 유튜브 쇼츠 제목이 약한지 혼자 판단 안 되는 사람</li>
+              <li>• 썸네일 문구 강도를 못 잡는 사람</li>
+              <li>• 첫 3초 오프닝이 늘 아쉬운 사람</li>
+              <li>• 업로드 전에 마지막 점검이 필요한 사람</li>
               <li>• AI를 쓰다 보니 채널 말투가 흔들리는 사람</li>
             </ul>
           </div>
@@ -143,7 +147,13 @@ export default function Home() {
 
       {/* 가격표 */}
       <section className="max-w-5xl mx-auto px-6 pb-16">
-        <h2 className="mb-8 text-2xl font-black">서비스 플랜</h2>
+        <div className="mb-8">
+          <h2 className="text-2xl font-black">서비스 플랜</h2>
+          <p className="mt-2 text-sm text-gray-500">
+            사이트에서 바로 결제하는 방식이 아니라, 신청 확인 후 진행 안내 및
+            결제 안내를 드립니다.
+          </p>
+        </div>
 
         <div className="grid gap-6 md:grid-cols-3">
           <div className="rounded-3xl border bg-white p-6 space-y-4">
@@ -156,6 +166,14 @@ export default function Home() {
               <li>설명문 간단 개선</li>
               <li>최종 한 줄 판단</li>
             </ul>
+            <a
+              href={FORM_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-6 block rounded-2xl bg-black px-6 py-4 text-center font-semibold text-white"
+            >
+              이 플랜 신청하기
+            </a>
           </div>
 
           <div className="rounded-3xl border-2 border-black bg-white p-6 shadow-sm space-y-4">
@@ -174,6 +192,14 @@ export default function Home() {
               <li>설명문 개선안</li>
               <li>업로드 가능 여부 판단</li>
             </ul>
+            <a
+              href={FORM_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-6 block rounded-2xl bg-black px-6 py-4 text-center font-semibold text-white"
+            >
+              이 플랜 신청하기
+            </a>
           </div>
 
           <div className="rounded-3xl border bg-white p-6 space-y-4">
@@ -186,6 +212,14 @@ export default function Home() {
               <li>AI 티 줄인 버전</li>
               <li>더 클릭형 / 더 안정형 버전 제공</li>
             </ul>
+            <a
+              href={FORM_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-6 block rounded-2xl bg-black px-6 py-4 text-center font-semibold text-white"
+            >
+              이 플랜 신청하기
+            </a>
           </div>
         </div>
       </section>
@@ -205,25 +239,25 @@ export default function Home() {
 
           <div className="rounded-3xl border bg-white p-6">
             <p className="mb-2 text-sm text-gray-500">STEP 2</p>
-            <h3 className="mb-3 text-xl font-bold">문제 진단</h3>
+            <h3 className="mb-3 text-xl font-bold">내용 확인</h3>
             <p className="leading-7 text-gray-700">
-              약한 지점, 톤 불일치, 오프닝 문제를 분석합니다.
+              신청 내용을 확인한 뒤 진행 가능 여부와 예상 방향을 안내합니다.
             </p>
           </div>
 
           <div className="rounded-3xl border bg-white p-6">
             <p className="mb-2 text-sm text-gray-500">STEP 3</p>
-            <h3 className="mb-3 text-xl font-bold">수정안 제안</h3>
+            <h3 className="mb-3 text-xl font-bold">결제 안내</h3>
             <p className="leading-7 text-gray-700">
-              제목, 썸네일 문구, 오프닝, 설명문 수정안을 정리해드립니다.
+              진행이 확정되면 결제 방식과 진행 절차를 별도로 안내드립니다.
             </p>
           </div>
 
           <div className="rounded-3xl border bg-white p-6">
             <p className="mb-2 text-sm text-gray-500">STEP 4</p>
-            <h3 className="mb-3 text-xl font-bold">업로드 판단</h3>
+            <h3 className="mb-3 text-xl font-bold">결과 전달</h3>
             <p className="leading-7 text-gray-700">
-              지금 올려도 되는지, 수정 후 올려야 하는지 최종 판단까지 드립니다.
+              제목, 썸네일, 오프닝, 설명문 기준으로 수정안을 정리해드립니다.
             </p>
           </div>
         </div>
@@ -235,6 +269,14 @@ export default function Home() {
 
         <div className="space-y-4">
           <div className="rounded-2xl border bg-white p-5">
+            <h3 className="mb-2 font-bold">사이트에서 바로 결제되나요?</h3>
+            <p className="leading-7 text-gray-700">
+              아닙니다. 현재는 신청 내용을 먼저 확인한 뒤, 진행 가능 여부와
+              결제 안내를 드리는 방식으로 운영하고 있습니다.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border bg-white p-5">
             <h3 className="mb-2 font-bold">유튜브 쇼츠 제목 추천도 해주나요?</h3>
             <p className="leading-7 text-gray-700">
               네. 채널 톤과 영상 방향에 맞춰 제목 수정안까지 함께 드립니다.
@@ -242,17 +284,10 @@ export default function Home() {
           </div>
 
           <div className="rounded-2xl border bg-white p-5">
-            <h3 className="mb-2 font-bold">쇼츠 썸네일 문구도 봐주나요?</h3>
-            <p className="leading-7 text-gray-700">
-              네. 제목과 따로 놀지 않도록 썸네일 문구도 같이 점검합니다.
-            </p>
-          </div>
-
-          <div className="rounded-2xl border bg-white p-5">
             <h3 className="mb-2 font-bold">결과는 어떤 형식으로 받나요?</h3>
             <p className="leading-7 text-gray-700">
-              핵심 문제, 수정 우선순위, 제목·썸네일·오프닝 수정안,
-              설명문 개선안, 최종 판단까지 정리된 형태로 전달드립니다.
+              핵심 문제, 수정 우선순위, 제목·썸네일·오프닝 수정안, 설명문
+              개선안, 최종 판단까지 정리된 형태로 전달드립니다.
             </p>
           </div>
         </div>
@@ -264,12 +299,12 @@ export default function Home() {
           <h2 className="text-3xl font-black leading-tight md:text-4xl">
             쇼츠 업로드 전 점검이 필요하다면,
             <br />
-            제목과 썸네일부터 먼저 잡아보세요.
+            먼저 신청부터 남겨보세요.
           </h2>
 
           <p className="mt-5 max-w-2xl leading-8 text-white/80">
-            유튜브 쇼츠 제목 추천, 썸네일 문구 점검, 첫 3초 오프닝 수정까지
-            업로드 전에 한 번에 확인할 수 있습니다.
+            신청 내용을 확인한 뒤 진행 가능 여부와 결제 안내를 드립니다.
+            간단한 문의는 카카오톡으로 바로 가능합니다.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
